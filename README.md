@@ -57,7 +57,7 @@ The project focuses on replicating the strict architectural design rules establi
 
 I have documented the complete step-by-step implementation journey, mathematical breakdown of coordinate transformations, center-cropping mechanics, and segmentation optimization bottlenecks here:
 
-[Building U-Net From Scratch While Reading the Paper](https://www.google.com/search?q=https://medium.com/%40himanshusr451tehs/building-u-net-from-scratch-while-reading-the-paper-your-blog-id)
+[Building U-Net From Scratch While Reading the Paper](https://medium.com/@himanshusr451tehs/my-journey-of-implementing-u-net-from-scratch-765d78e33966)
 
 The repository contains:
 
