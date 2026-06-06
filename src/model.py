@@ -90,7 +90,9 @@ class UNet(nn.Module):
         # ---------------------- OutputSegmentationMap Settings ----------------------
         out_channels_S: int = config["n_classes"],
         hidden_channels_S: int = config["segmentation_map_hidden_channels"],
-        kernel_size_S: int = config["segmentation_map_kernel_size"]):
+        kernel_size_S: int = config["segmentation_map_kernel_size"],
+        
+        debug: bool = False):
 
         super(UNet, self).__init__()
 
@@ -99,7 +101,8 @@ class UNet(nn.Module):
             in_channels = in_channels_E,
             n_layers = n_layers_E,
             kernel_size = kernel_size_E,
-            padding = padding_E
+            padding = padding_E,
+            debug = debug
         )
 
         # Create Bottleneck layer
@@ -117,7 +120,8 @@ class UNet(nn.Module):
             in_channels = in_channels_D,
             kernel_size = kernel_size_D,
             padding = padding_D,
-            n_layers = n_layers_D
+            n_layers = n_layers_D,
+            debug = debug
         )
 
         # Create Skip-connections
