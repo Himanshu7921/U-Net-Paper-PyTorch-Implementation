@@ -1,0 +1,5 @@
+checkpoints/
+predictions/
+data/
+__pycache__/
+wandb/
